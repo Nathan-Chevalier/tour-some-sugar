@@ -1,0 +1,23 @@
+.bigbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigbox__twin{
+    display: flex;
+    flex-direction: row;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.band, .venue{
+    padding: 1em;
+}
+
+.bands, .venues{
+    padding: 2em;
+}

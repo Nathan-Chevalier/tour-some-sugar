@@ -10,11 +10,22 @@ let venuesHTML = venuesOutput()
 
 let fullHTML = `
 <h1>Tour Some Sugar on Me</h1>
-<article class="bookings">
-    ${bookingHTML}
-</article>
-<article class="venues">${venuesHTML}</article>
-<article class="bands">${bandsHTML}</article>
+<div class="bigbox">
+    <div class="bigbox__single">
+        <h2>Our Current Bookings</h2>
+        <article class="bookings">
+            ${bookingHTML}
+        </article>
+    </div>
+    <div class="bigbox__twin">
+        <article class="venues"><h2>Our Venues</h2>
+            ${venuesHTML}
+        </article>
+        <article class="bands"><h2>Our Bands</h2>
+            ${bandsHTML}
+        </article>
+    </div>
+</div>
 `
 
 mainContainer.innerHTML = fullHTML
