@@ -182,3 +182,15 @@ const database = {
       
 
 }
+
+export const getBands = () => {
+    return database.band.map((bands) => ({...bands}))
+}
+
+export const getVenues = () => {
+    return database.venue.map((venues) => ({...venues}))
+}
+
+export const getBookings = () => {
+    return database.booking.map((bookings) => ({...bookings}))
+}
