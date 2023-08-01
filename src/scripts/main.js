@@ -1,9 +1,11 @@
 import { bookingOutput } from "./bookings.js";
 import { bandsOutput } from "./bands.js";
+import { venuesOutput } from "./venues.js";
 
 const mainContainer = document.querySelector("#container")
 let bookingHTML = bookingOutput()
 let bandsHTML = bandsOutput()
+let venuesHTML = venuesOutput()
 
 
 let fullHTML = `
@@ -11,6 +13,7 @@ let fullHTML = `
 <article class="bookings">
     ${bookingHTML}
 </article>
+<article class="venues">${venuesHTML}</article>
 <article class="bands">${bandsHTML}</article>
 `
 
